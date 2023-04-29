@@ -1,0 +1,360 @@
+[
+    {
+        "id": "b229b619dafb2a71",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a4e8c89df3463b5c",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "75ac040215d734cb",
+        "type": "ui_group",
+        "name": "Analog",
+        "tab": "08cec0319d864fd4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "08cec0319d864fd4",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dc0dc6d8b8ccc238",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "8e58faa0356ad041",
+        "type": "ui_group",
+        "name": "Click",
+        "tab": "08cec0319d864fd4",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0c92507a0f7f4838",
+        "type": "mqtt-broker",
+        "name": "local",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "918cf4dd67970bbc",
+        "type": "inject",
+        "z": "b229b619dafb2a71",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Naber Dostum",
+        "payload": "15",
+        "payloadType": "num",
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "a0e76161c7729a6a"
+            ]
+        ]
+    },
+    {
+        "id": "a0e76161c7729a6a",
+        "type": "debug",
+        "z": "b229b619dafb2a71",
+        "name": "out",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "60d027d4252d4bd6",
+        "type": "http in",
+        "z": "b229b619dafb2a71",
+        "name": "",
+        "url": "test",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 280,
+        "wires": [
+            [
+                "044a375dbeb15edc"
+            ]
+        ]
+    },
+    {
+        "id": "044a375dbeb15edc",
+        "type": "template",
+        "z": "b229b619dafb2a71",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head>\n    <title>\n    sldfjflk\n    </title>\n    </head>\n    <body>\n        <h1>dddd</h1>\n        <p>ddsfs</p>\n    </body>\n</html>\n                ",
+        "output": "str",
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "5fc7890fa4a6bef1"
+            ]
+        ]
+    },
+    {
+        "id": "5fc7890fa4a6bef1",
+        "type": "http response",
+        "z": "b229b619dafb2a71",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 690,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "fd35fda63897257a",
+        "type": "ui_text",
+        "z": "a4e8c89df3463b5c",
+        "group": "8e58faa0356ad041",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 370,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c31685c7f0a0e01e",
+        "type": "ui_button",
+        "z": "a4e8c89df3463b5c",
+        "name": "",
+        "group": "8e58faa0356ad041",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "hahahaah",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "fd35fda63897257a"
+            ]
+        ]
+    },
+    {
+        "id": "23527d7720e31b4c",
+        "type": "mqtt in",
+        "z": "a4e8c89df3463b5c",
+        "name": "",
+        "topic": "aliali",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0c92507a0f7f4838",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "dc030069d319f5dc"
+            ]
+        ]
+    },
+    {
+        "id": "dc030069d319f5dc",
+        "type": "ui_gauge",
+        "z": "a4e8c89df3463b5c",
+        "name": "",
+        "group": "75ac040215d734cb",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "70",
+        "diff": false,
+        "className": "",
+        "x": 430,
+        "y": 320,
+        "wires": []
+    }
+]
