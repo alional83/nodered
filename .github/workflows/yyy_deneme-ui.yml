@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Deneme-ui'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_11F8C86D7FFB4D0DBCCAB7914E9E3C4D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C256540BE266497D933EA42D7E87B07E }}
           package: .
