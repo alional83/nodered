@@ -171,6 +171,17 @@
         "sessionExpiry": ""
     },
     {
+        "id": "790656ff1cb17a7b",
+        "type": "ui_group",
+        "name": "DDD",
+        "tab": "08cec0319d864fd4",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "918cf4dd67970bbc",
         "type": "inject",
         "z": "b229b619dafb2a71",
@@ -296,7 +307,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "hahahaah",
+        "payload": "selam",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
